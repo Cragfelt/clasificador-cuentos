@@ -15,7 +15,11 @@ from sklearn.decomposition import PCA
 @st.cache_resource
 def cargar_modelos():
     nlp = spacy.load("es_core_news_sm")
-    model = SentenceTransformer('all-MiniLM-L6-v2')
+    @st.cache_resource
+def cargar_modelo():
+    return SentenceTransformer('all-MiniLM-L6-v2')
+
+model = cargar_modelo()
     return nlp, model
 
 nlp, model = cargar_modelos()
