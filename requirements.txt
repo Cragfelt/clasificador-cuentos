@@ -1,9 +1,10 @@
 streamlit
-spacy
+spacy==3.7.2
 pandas
 numpy
 matplotlib
 scikit-learn
-sentence-transformers
+sentence-transformers==2.2.2
+torch==2.0.1
 
 https://github.com/explosion/spacy-models/releases/download/es_core_news_sm-3.7.0/es_core_news_sm-3.7.0.tar.gz
